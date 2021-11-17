@@ -10,11 +10,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
 
 /* ************************ */
+
 * {
     margin: 0;
 }
 
 /* ************************ */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
@@ -22,67 +24,111 @@ body {
 }
 
 /* ************************ */
+
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.6) 0,rgba(0, 0, 0, 0.6)100%), url("./scss/img/Header-Bckgrnd.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 800px;
+    height: 43.75em;
+
+    #head-01 {
+        padding: 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: flex;
+            gap: 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: #fd3fb3;
+                text-decoration: underline;
+            }
+        }
+
+        #head-icon {
+            margin-right: 6%;
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    #head-02 {
+        text-align: center;
+        color: white;
+        margin-top: 12em;
+
+        p {
+            font-weight: 200;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            margin: 2%;
+            font-weight: 600;
+            font-size: 3em;
+            margin-bottom: 5%;
+        }
+
+        a {
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(45deg,#fd3fb3 0,#fd3e4f 100%);
+            padding: 1em 2.5em;
+        }
+    }
 }
 
 /* ************************ */
-#head-01 {
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#head-01 nav {
-    display: flex;
-    gap: 20px;
-}
+.About {
+    margin: 0;
+   
+    .About-us {
+        color: white;
+        height: 28em;
+        background: linear-gradient(45deg,#fd3fb3 0,#fd3e4f 100%);
 
-#head-01 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        #About-txt {
+            padding: 5em 5em 2.5em 5em;
 
-#head-01 nav a:hover {
-    color: #fd3fb3;
-    text-decoration: underline;
-}
+            h2 {
+                font-size: 1.6em;
+                font-weight: 300;
+            }
+        }
 
-#head-icon {
-    margin-right: 6%;
-    display: flex;
-    gap: 20px;
+        #About-btn {
+            display: flex;
+            justify-content: right;
+            margin-right: 4.375em;
+            align-items: center;
+
+            a {
+                color: white;
+                text-decoration: none;
+                border: solid white 2px;
+                padding: 0.7em 1.8em 0.7em 1.8em;
+                border-radius: 30px;
+            }
+        }
+
+    }
+
 }
 
 /* ************************ */
-#head-02 {
-    text-align: center;
-    color: white;
-    margin-top: 12em;
-}
 
-#head-02 p {
-    font-weight: 200;
-    font-size: 1.5em;
-}
-
-#head-02 h1 {
-    font-weight: 600;
-    font-size: 3em;
-    margin-bottom: 5%;
-}
-
-#head-02 a {
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(45deg,#fd3fb3 0,#fd3e4f 100%);
-    padding: 0.7em 2.5em;
+@media only screen and (max-width: 600px) {
+    
 }
 
 /* ************************ */
